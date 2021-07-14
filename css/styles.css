@@ -1,0 +1,150 @@
+/**************************************************************************************
+ styles and px are a bit changed since the figma files doesnt go well with the website
+   *************************************************************************************/
+   @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+*{
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+.first-section{
+    display: flex;
+    background-color: #2D25A0;
+    /* figma width 1440px doesn't cover the full website so had to use 100% width  */
+    width: 100%;
+}
+
+.first-section:hover .cover-photo img{
+    transform: scale(1.3);
+    transition: 2s ease-in-out;
+}
+.h-title{
+    /* font-size 64px makes thing very large and messy so used 40px instead of 64px */
+    font-size: 40px;
+    color:white;
+    width: 485px;
+    height: 230px;
+    margin: 207px 0 0 156px;
+}
+span{
+    margin: 0px 8px;
+}
+.cover-photo img{
+    width: 560px;
+    height: 438px;
+    margin: 153px 142px 86px 106px;
+}
+.first-section button{
+    color:white;
+    background-color: #E02C6D;
+    width: 168px;
+    height: 44px;
+    margin: 464px,1116px,169px,156px;
+    
+}
+
+.players{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-row-gap: 30px ;
+    grid-column-gap: 27px;
+    margin: 70px 210px 165px 180px;
+    justify-content: center;
+    align-items: center;
+    
+}
+.player{
+    Width:330px;
+    Height:474px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    /* max-width: 300px; */
+    margin: 15px;
+    
+    justify-content: center;
+    align-items: center;
+}
+.player img{
+    width: 300px;
+    height: 256px;
+    margin: 15px 15PX 16px 15px;
+}
+.player-name, .player-info{
+    margin: 15px;
+}
+
+/* highlights section styles */
+.highlights{
+    display: flex;
+}
+.highlights-title{
+    height: 120px;
+    width: 469px;
+   margin: 224px 66px 493px 182px;
+    
+
+
+
+}
+.highlights-title h1{
+    font-family: Poppins;
+font-size: 48px;
+font-style: normal;
+font-weight: 700;
+line-height: 60px;
+letter-spacing: 0px;
+text-align: left;
+
+}
+.highlights-title p{
+    font-family: Poppins;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 28px;
+letter-spacing: 0px;
+text-align: left;
+
+}
+.highlights-title button{
+    width: 173px;
+    height: 44px;
+    background: #E02C6D;
+    margin: 24px 0px;
+    color: white;
+}
+
+.highlights-img img{
+    height: 427px;
+    width: 567px;
+    margin: 165px 156px 234px 0;
+    
+    border-radius: 0px;
+
+}
+/* video styles and design  */
+
+.highlights-video{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.highlights-video-h1{
+    font-size: 48px;
+    font-weight: 700;
+    color: teal;
+    text-align: center;
+    margin-bottom: 35px;
+}
+.video{
+    Width:330px;
+    Height:474px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    /* max-width: 300px; */
+    margin: 15px;
+    
+    justify-content: center;
+    align-items: center;
+
+}
+iframe{
+    margin: 20px;
+}
